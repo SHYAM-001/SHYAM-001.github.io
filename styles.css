@@ -749,7 +749,8 @@ span{
     }
 
     .portfolio-about-img{
-        margin-right:13rem;
+        width: 90vw;
+        margin-right:-10rem;
     }
 
     .portfolio-about-img img{
@@ -771,6 +772,10 @@ span{
     }
 
     .portfolio-footer .portfolio-footer-text{
-        margin-left:-45rem;
+        margin-left:-38rem;
+    }
+
+    .portfolio-footer .portfolio-footer-iconTop{
+        margin-right:5rem;
     }
 }
