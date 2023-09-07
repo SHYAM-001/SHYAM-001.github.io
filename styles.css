@@ -863,6 +863,7 @@ span{
     }
 
     .portfolio-about-img{
+        width:30vh;
         margin-left:calc(100% - 120%);
     }
 
