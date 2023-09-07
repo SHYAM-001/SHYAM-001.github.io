@@ -506,6 +506,10 @@ span{
     html{
         font-size: 55%;
     }
+
+    .portfolio-footer{
+        margin-left:-30%;
+    }
 }
 
 @media (max-width: 991px){
@@ -537,6 +541,14 @@ span{
     .portfolio-footer{
         padding: 2rem 3%;
     }
+
+    .portfolio-footer{
+        margin-left:-30%;
+    }
+
+    .portfolio-footer .portfolio-footer-text{
+        margin-left:-80rem;
+    }
 }
 
 @media (max-width: 768px){
@@ -559,6 +571,13 @@ span{
     .portfolio-navbar.active{
         display: block;
     }   
+
+
+    header i{
+        margin:calc(100% - 25%);
+        justify-content:right;
+        position: fixed;
+    }
 
     .portfolio-navbar a{
         display: block;
@@ -583,10 +602,29 @@ span{
         margin-top: 4rem;
     }
 
+    .portfolio-education-border{
+        margin:0;
+        border:0;
+    }
+
     .row{
         display:flex;
         flex-direction: column;
         gap:3rem;
+    }
+    
+    .portfolio-education-heading{
+        margin:0;
+        border:0;
+        width:100%;
+    }
+
+    .portfolio-education-container{
+       margin-left:2.5rem;
+    }
+
+    .portfolio-education-container .portfolio-education-box {
+        width:auto;
     }
 
     .portfolio-about{
@@ -594,8 +632,9 @@ span{
     }
 
     .portfolio-about img{
-        width:70vw;
+        width:40vw;
         margin-top: 4rem;
+        
     }
 
     .portfolio-services h2{
@@ -615,23 +654,57 @@ span{
     }
 
     .portfolio-footer{
-        margin-left: -35%;
+        margin-left:-30%;
+    }
+
+    .portfolio-footer .portfolio-footer-text {
+        margin-left:-15rem;
+    }
+
+    .portfolio-footer .portfolio-footer-iconTop{
+        margin-right:10rem;
     }
 }
 
 @media (max-width: 617px){
+
     .portfolio-container{
         grid-template-columns: 1fr;
+    }
+
+    header i{
+        margin:calc(100% - 25%);
+        justify-content:right;
+        position: fixed;
+    }
+
+    .portfolio-navbar{
+        margin-right:5rem;
+        position:fixed;
+    }
+
+    .portfolio-footer .portfolio-footer-text{
+        margin-left:-22rem;
     }
 }
 
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }       
+
+    header i{
+        margin:calc(100% - 25%);
+        justify-content:right;
+        position: fixed;
     }
 
     .portfolio-contact form .portfolio-input-box input{
         width:100%;
+    }
+
+    .portfolio-footer .portfolio-footer-text{
+        margin-left:-25rem;
     }
 }
 
@@ -640,16 +713,64 @@ span{
         width: 90vw;;
     }
 
+    header i{
+        margin:calc(100% - 25%);
+        justify-content:right;
+        position: fixed;
+    }
+
     .portfolio-about-img img{
         width: 90vw;
     }
 
+    .row{
+        margin:0;
+        border:0;
+        padding:0;
+    }
+   
     .portfolio-footer{
-        flex-direction: row-reverse;
+        margin-left:-40%;
     }
 
     .portfolio-footer p{
         text-align: center;
         margin-top: 2rem;
+    }
+
+}
+
+@media (max-width:320px)
+{
+
+    header i{
+       margin-left:calc(100% - 25%);
+       position:fixed;
+    }
+
+    .portfolio-about-img{
+        margin-right:13rem;
+    }
+
+    .portfolio-about-img img{
+        width:30vh;
+    }
+
+    .portfolio-education-container{
+       margin-left:2.5rem;
+    }
+
+    .portfolio-education-container .portfolio-education-box {
+        width:200px;
+    }
+
+
+    .portfolio-footer{
+        margin:0;
+        border:none;
+    }
+
+    .portfolio-footer .portfolio-footer-text{
+        margin-left:-45rem;
     }
 }
