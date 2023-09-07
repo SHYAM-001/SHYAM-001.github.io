@@ -507,6 +507,8 @@ span{
         font-size: 55%;
     }
 
+
+    
     .portfolio-footer{
         margin-left:-30%;
     }
@@ -536,6 +538,10 @@ span{
 
     .portfolio-contact{
         min-height: auto;
+    }
+
+    .portfolio-about-img{
+        margin-left:calc(100% - 120%);
     }
 
     .portfolio-footer{
@@ -632,7 +638,7 @@ span{
     }
 
     .portfolio-about img{
-        width:40vw;
+        width:30vw;
         margin-top: 4rem;
         
     }
@@ -643,6 +649,10 @@ span{
 
     .portfolio-education{
         margin-bottom: 3rem;
+    }
+
+    .portfolio-about-img{
+        margin-left:calc(100% - 120%);
     }
 
     .portfolio-portfolio h2{
@@ -681,7 +691,10 @@ span{
     .portfolio-about-img img{
         width:30vh;
     }
-    
+
+    .portfolio-about-img{
+        margin-left:calc(100% - 120%);
+    }
     .portfolio-navbar{
         margin-right:5rem;
         position:fixed;
