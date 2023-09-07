@@ -678,6 +678,10 @@ span{
         position: fixed;
     }
 
+    .portfolio-about-img img{
+        width:30vh;
+    }
+    
     .portfolio-navbar{
         margin-right:5rem;
         position:fixed;
@@ -697,6 +701,10 @@ span{
         margin:calc(100% - 25%);
         justify-content:right;
         position: fixed;
+    }
+
+    .portfolio-about-img img{
+        width:30vh;
     }
 
     .portfolio-contact form .portfolio-input-box input{
@@ -725,6 +733,10 @@ span{
 
     .portfolio-about-img img{
         width: 90vw;
+    }
+
+    .portfolio-about-img img{
+        width:30vh;
     }
 
     .portfolio-about-img{
