@@ -703,6 +703,10 @@ span{
         width:100%;
     }
 
+    .portfolio-about-img{
+        margin-left:calc(100% - 120%);
+    }
+
     .portfolio-footer .portfolio-footer-text{
         margin-left:-25rem;
     }
@@ -721,6 +725,10 @@ span{
 
     .portfolio-about-img img{
         width: 90vw;
+    }
+
+    .portfolio-about-img{
+        margin-left:calc(100% - 120%);
     }
 
     .row{
@@ -749,8 +757,46 @@ span{
     }
 
     .portfolio-about-img{
-        width: 90vw;
-        margin-right:-10rem;
+        margin-left:calc(100% - 120%);
+    }
+
+    .portfolio-about-img img{
+        width:30vh;
+    }
+
+    .portfolio-education-container{
+       margin-left:2.5rem;
+    }
+
+    .portfolio-education-container .portfolio-education-box {
+        width:200px;
+    }
+
+
+    .portfolio-footer{
+        margin:0;
+        border:none;
+    }
+
+    .portfolio-footer .portfolio-footer-text{
+        margin-left:-38rem;
+    }
+
+    .portfolio-footer .portfolio-footer-iconTop{
+        margin-right:5rem;
+    }
+}
+
+@media (max-width:220px)
+{
+
+    header i{
+       margin-left:calc(100% - 25%);
+       position:fixed;
+    }
+
+    .portfolio-about-img{
+        margin-left:calc(100% - 120%);
     }
 
     .portfolio-about-img img{
