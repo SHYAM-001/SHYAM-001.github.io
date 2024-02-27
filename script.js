@@ -58,6 +58,11 @@ function sendContactDetails(){
                 emailjs.send(serviceID,templateID,params)
                 .then( res => {
                     modal();
+                    document.getElementById("subject").value = "";
+                    document.getElementById("name").value = "";
+                    document.getElementById("email_to").value = "";
+                    document.getElementById("phone").value = "";
+                    document.getElementById("message").value = "";
                 })
                 .catch();
 }
