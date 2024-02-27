@@ -36,7 +36,7 @@ function sendContactDetails(){
                 })();
             
                 let subject = document.getElementById("subject").value;
-                const to_name = "RGM";
+                const to_name = "SHYAM K S";
                 let from_name = document.getElementById("name").value;
                 let sender_email = document.getElementById("email_to").value ;
                 let phone_no = document.getElementById("phone").value;
