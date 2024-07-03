@@ -25,6 +25,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
+            <a href="#achievement">Achievements</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
@@ -122,7 +123,7 @@
                         <div class="portfolio-education-container">
                             <div class="portfolio-education-box">
                                 <h2>2023 - One Month</h2>
-                                <h2>IT DEPARTEMENT - Itern</h2>
+                                <h2>IT DEPARTEMENT - Intern</h2>
                                 <p>I have done my first Intern at the <span style="color:#0ef">Airport Authority of
                                         India (Chennai)</span>, In the IT
                                     department Field </p>
@@ -153,6 +154,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- service section design-->
     <section class="portfolio-services" id="services">
@@ -217,10 +220,9 @@
                 <img src="https://cdn.pixabay.com/photo/2020/04/08/16/32/keyboard-5017973_1280.jpg"
                     alt="Basic Twitter like website page">
                 <div class="portfolio-layer">
-                    <h4>Email</h4>
-                    <p>Experience the convenience of efficient email management through my web portal. I've designed a
-                        user-friendly platform that simplifies your email experience. </p>
-                    <a href="https://github.com/SHYAM-001/Email.git" target="_blank4"><i
+                    <h4>Ecommerce</h4>
+                    <p>Discover seamless shopping at Enchanted Emporium , where convenience meets quality </p>
+                    <a href="https://github.com/SHYAM-001/Enchanted-Emporium.git" target="_blank4"><i
                             class="bx bx-link-external"></i></a>
                 </div>
             </div>
@@ -303,6 +305,86 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const image1 = document.getElementById('image1');
+            const image2 = document.getElementById('image2');
+            const image3 = document.getElementById('image3');
+            const image4 = document.getElementById('image4');
+            const ISTE = document.getElementById('ISTE');
+            const datathon = document.getElementById('datathon');
+
+            image1.addEventListener('mouseover', () => {
+                ISTE.style.display = "none";
+                datathon.style.display = "block";
+                image1.classList.add('enlarged');
+                image2.classList.add('shrink');
+                image3.classList.add('shrink');
+                image4.classList.add('shrink');
+                image2.classList.remove('enlarged');
+                image3.classList.remove('enlarged');
+                image4.classList.remove('enlarged');
+            });
+
+            image1.addEventListener('mouseout', () => {
+                image2.classList.remove('shrink');
+            });
+
+            image2.addEventListener('mouseover', () => {
+                ISTE.style.display = "none";
+                image2.classList.add('enlarged');
+                image1.classList.add('shrink');
+                image1.classList.remove('enlarged');
+                image3.classList.add('shrink');
+                image3.classList.remove('enlarged');
+            });
+
+            image2.addEventListener('mouseout', () => {
+                image2.classList.remove('enlarged');
+                image1.classList.remove('shrink');
+                image3.classList.remove('shrink');
+            });
+
+            image3.addEventListener('mouseover', () => {
+                ISTE.style.display = "block";
+                datathon.style.display = "none";
+                image3.classList.add('enlarged');
+                image3.classList.remove('shrink');
+                image1.classList.add('shrink');
+                image1.classList.remove('enlarged');
+                image2.classList.add('shrink');
+                image2.classList.remove('enlarged');
+                image4.classList.add('shrink');
+                image4.classList.remove('enlarged');
+            });
+
+            image3.addEventListener('mouseout', () => {
+                image3.classList.remove('enlarged');
+                image2.classList.remove('shrink');
+                image4.classList.remove('shrink');
+            });
+
+            image4.addEventListener('mouseover', () => {
+                ISTE.style.display = "block";
+                datathon.style.display = "none";
+                image4.classList.add('enlarged');
+                image4.classList.remove('shrink');
+                image1.classList.add('shrink');
+                image1.classList.remove('enlarged');
+                image2.classList.add('shrink');
+                image2.classList.remove('enlarged');
+                image3.classList.add('shrink');
+                image3.classList.remove('enlarged');
+            });
+
+            image4.addEventListener('mouseout', () => {
+                image4.classList.remove('enlarged');
+                image3.classList.remove('shrink');
+            });
+        });
+
+    </script>
 </body>
 
 </html>
