@@ -370,11 +370,28 @@ span {
     justify-content: center;
 }
 
+
+.text-content {
+    margin: 0 auto;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
 .portfolio-text-content {
-    font-size: medium;
-    font-weight: bold;
-    margin-right: 2rem;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: sans-serif;
     width: 300px;
+}
+
+.portfolio-text-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.portfolio-text-content.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .portfolio-imag-box {
@@ -431,6 +448,16 @@ span {
     opacity: 1;
     bottom: 25px;
 }
+
+.portfolio-imag-box.enlarged {
+    width: 500px;
+}
+
+.portfolio-imag-box.shrink {
+    width: 100px;
+}
+
+
 
 .enlarged {
     width: 500px !important;

@@ -112,7 +112,7 @@ ScrollReveal({
     delay:200
 });
 
-ScrollReveal().reveal('.portfolio-home-content, .portfolio-heading, .portfolio-education-border',{origin: 'top'});
+ScrollReveal().reveal('.portfolio-home-content, .portfolio-heading, .portfolio-education-border, portfolio-achievement-container, portfolio-achievement-gallery',{origin: 'top'});
 ScrollReveal().reveal('.portfolio-home-img, .portfolio-services-container, .portfolio-box, .portfolio-contact form,.portfolio-education-heading,.portfolio-education-heading .portfolio-education-box',{origin: 'bottom'});
 ScrollReveal().reveal('.portfolio-home-content h1, .portfolio-about-img ',{origin: 'left'});
 ScrollReveal().reveal('.portfolio-home-content p, .portfolio-about-content ',{origin: 'right'});

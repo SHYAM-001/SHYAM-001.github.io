@@ -155,7 +155,32 @@
         </div>
     </section>
 
+    <section class="portfolio-achievement" id="achievement">
+        <h2 class="portfolio-heading">My <span>Achievements</span></h2>
 
+        <div class="portfolio-achievement-container">
+            <div class="text-content">
+                <div class="portfolio-text-content" id="datathon" style="display:block;">
+                    <h1>Winner of <span>Datathon</span> Conducted by </h1>
+                    <h2><span style="color:#0ef;">KSP </span>Karantaka State Police Datathon</h2>
+                    <h3>Powered by <span style="color:#0ef;">Hack2Skill</span></h3>
+                    <h3>Technological Partner <span style="color:#0ef;">Microsoft</span></h3>
+                </div>
+                <div class="portfolio-text-content" id="ISTE" style="display:none;">
+                    <h1>Event Organizer at <span style="color:#0ef">ISTE</span></h1>
+                    <h2>Conducted various <span style="color:#0ef">Technical Events</span> for the Members of ISTE at
+                        <span style="color:#0ef">Easwari Engineering College</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="portfolio-gallery">
+                <div class="portfolio-imag-box" id="image1"></div>
+                <div class="portfolio-imag-box" id="image2"></div>
+                <div class="portfolio-imag-box" id="image3"></div>
+                <div class="portfolio-imag-box" id="image4"></div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- service section design-->
@@ -265,10 +290,7 @@
     <!-- contact section design -->
     <section class="portfolio-contact" id="contact">
         <h2 class="portfolio-heading">Contact <span>Me!</span></h2>
-
         <form>
-
-
             <div class="portfolio-input-box">
                 <input type="text" name="name" id="name" placeholder="Full Name" required>
                 <input type="email" name="email" id="email_to" placeholder="Email Address" required>
@@ -309,83 +331,50 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-            const image1 = document.getElementById('image1');
-            const image2 = document.getElementById('image2');
-            const image3 = document.getElementById('image3');
-            const image4 = document.getElementById('image4');
+            const images = Array.from(document.querySelectorAll('.portfolio-imag-box'));
             const ISTE = document.getElementById('ISTE');
             const datathon = document.getElementById('datathon');
 
-            image1.addEventListener('mouseover', () => {
-                ISTE.style.display = "none";
-                datathon.style.display = "block";
-                image1.classList.add('enlarged');
-                image2.classList.add('shrink');
-                image3.classList.add('shrink');
-                image4.classList.add('shrink');
-                image2.classList.remove('enlarged');
-                image3.classList.remove('enlarged');
-                image4.classList.remove('enlarged');
-            });
+            images.forEach((image, index) => {
+                image.addEventListener('mouseover', () => {
+                    images.forEach((img, i) => {
+                        if (i === index) {
+                            img.classList.add('enlarged');
+                            img.classList.remove('shrink');
+                        } else {
+                            img.classList.add('shrink');
+                            img.classList.remove('enlarged');
+                        }
+                    });
 
-            image1.addEventListener('mouseout', () => {
-                image2.classList.remove('shrink');
-            });
+                    if (index === 2 || index === 3) {
+                        ISTE.style.display = "block";
+                        datathon.style.display = "none";
+                        setTimeout(() => {
+                            ISTE.classList.add('active');
+                        }, 10);
+                        datathon.classList.remove('active');
+                    }
+                });
 
-            image2.addEventListener('mouseover', () => {
-                ISTE.style.display = "none";
-                image2.classList.add('enlarged');
-                image1.classList.add('shrink');
-                image1.classList.remove('enlarged');
-                image3.classList.add('shrink');
-                image3.classList.remove('enlarged');
-            });
-
-            image2.addEventListener('mouseout', () => {
-                image2.classList.remove('enlarged');
-                image1.classList.remove('shrink');
-                image3.classList.remove('shrink');
-            });
-
-            image3.addEventListener('mouseover', () => {
-                ISTE.style.display = "block";
-                datathon.style.display = "none";
-                image3.classList.add('enlarged');
-                image3.classList.remove('shrink');
-                image1.classList.add('shrink');
-                image1.classList.remove('enlarged');
-                image2.classList.add('shrink');
-                image2.classList.remove('enlarged');
-                image4.classList.add('shrink');
-                image4.classList.remove('enlarged');
-            });
-
-            image3.addEventListener('mouseout', () => {
-                image3.classList.remove('enlarged');
-                image2.classList.remove('shrink');
-                image4.classList.remove('shrink');
-            });
-
-            image4.addEventListener('mouseover', () => {
-                ISTE.style.display = "block";
-                datathon.style.display = "none";
-                image4.classList.add('enlarged');
-                image4.classList.remove('shrink');
-                image1.classList.add('shrink');
-                image1.classList.remove('enlarged');
-                image2.classList.add('shrink');
-                image2.classList.remove('enlarged');
-                image3.classList.add('shrink');
-                image3.classList.remove('enlarged');
-            });
-
-            image4.addEventListener('mouseout', () => {
-                image4.classList.remove('enlarged');
-                image3.classList.remove('shrink');
+                image.addEventListener('mouseout', () => {
+                    images.forEach(img => {
+                        img.classList.remove('enlarged');
+                        img.classList.remove('shrink');
+                    });
+                    ISTE.style.display = "none";
+                    datathon.style.display = "block";
+                    setTimeout(() => {
+                        datathon.classList.add('active');
+                    }, 10);
+                    ISTE.classList.remove('active');
+                });
             });
         });
-
     </script>
+
+
+
 </body>
 
 </html>
