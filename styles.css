@@ -383,6 +383,10 @@ span {
     width: 300px;
 }
 
+.portfolio-text-content h1 {
+    font-size: 25px;
+}
+
 .portfolio-text-content {
     opacity: 0;
     transform: translateY(20px);
